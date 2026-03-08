@@ -1,5 +1,5 @@
 {
-    "description": "Windows-style shortcuts: Strg+Backspace, Strg+Arrow, Strg+Shift+Arrow, AltGr+7/8/9/0/Q für Klammern und Sonderzeichen, Strg+A/C/V/X/Z/Y/S/F/W/T",
+    "description": "Windows-style shortcuts: Strg+Backspace, Strg+Arrow, Strg+Shift+Arrow, AltGr+7/8/9/0/Q für Klammern und Sonderzeichen, Strg+A/C/V/X/Z/Y/S/F/W/T/K",
     "manipulators": [
         {
             "from": {
@@ -228,6 +228,22 @@
         },
         {
             "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": ["left_control"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "k",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
                 "key_code": "delete_or_backspace",
                 "modifiers": {
                     "mandatory": ["left_control"],
@@ -246,14 +262,14 @@
             "from": {
                 "key_code": "left_arrow",
                 "modifiers": {
-                    "mandatory": ["left_control"],
+                    "mandatory": ["left_control", "shift"],
                     "optional": ["any"]
                 }
             },
             "to": [
                 {
                     "key_code": "left_arrow",
-                    "modifiers": ["option"]
+                    "modifiers": ["option", "shift"]
                 }
             ],
             "type": "basic"
@@ -262,14 +278,14 @@
             "from": {
                 "key_code": "right_arrow",
                 "modifiers": {
-                    "mandatory": ["left_control"],
+                    "mandatory": ["left_control", "shift"],
                     "optional": ["any"]
                 }
             },
             "to": [
                 {
                     "key_code": "right_arrow",
-                    "modifiers": ["option"]
+                    "modifiers": ["option", "shift"]
                 }
             ],
             "type": "basic"
@@ -278,14 +294,14 @@
             "from": {
                 "key_code": "left_arrow",
                 "modifiers": {
-                    "mandatory": ["left_control", "shift"],
+                    "mandatory": ["left_control"],
                     "optional": ["any"]
                 }
             },
             "to": [
                 {
                     "key_code": "left_arrow",
-                    "modifiers": ["option", "shift"]
+                    "modifiers": ["option"]
                 }
             ],
             "type": "basic"
@@ -294,14 +310,14 @@
             "from": {
                 "key_code": "right_arrow",
                 "modifiers": {
-                    "mandatory": ["left_control", "shift"],
+                    "mandatory": ["left_control"],
                     "optional": ["any"]
                 }
             },
             "to": [
                 {
                     "key_code": "right_arrow",
-                    "modifiers": ["option", "shift"]
+                    "modifiers": ["option"]
                 }
             ],
             "type": "basic"
