@@ -246,7 +246,7 @@
             "from": {
                 "key_code": "delete_or_backspace",
                 "modifiers": {
-                    "mandatory": ["left_control"],
+                    "mandatory": ["left_command"],
                     "optional": ["any"]
                 }
             },
@@ -262,7 +262,7 @@
             "from": {
                 "key_code": "left_arrow",
                 "modifiers": {
-                    "mandatory": ["left_control", "shift"],
+                    "mandatory": ["left_command", "shift"],
                     "optional": ["any"]
                 }
             },
@@ -278,7 +278,7 @@
             "from": {
                 "key_code": "right_arrow",
                 "modifiers": {
-                    "mandatory": ["left_control", "shift"],
+                    "mandatory": ["left_command", "shift"],
                     "optional": ["any"]
                 }
             },
@@ -294,7 +294,7 @@
             "from": {
                 "key_code": "left_arrow",
                 "modifiers": {
-                    "mandatory": ["left_control"],
+                    "mandatory": ["left_command"],
                     "optional": ["any"]
                 }
             },
@@ -310,7 +310,7 @@
             "from": {
                 "key_code": "right_arrow",
                 "modifiers": {
-                    "mandatory": ["left_control"],
+                    "mandatory": ["left_command"],
                     "optional": ["any"]
                 }
             },
